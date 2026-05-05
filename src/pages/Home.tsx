@@ -15,7 +15,6 @@ const Home = () => {
     <>
       <div className="w-full bg-gradient-to-b from-[#E8F5E9] to-[#C8E6C9] px-4 py-12 sm:px-6 lg:flex lg:min-h-[727px] lg:items-center lg:px-6 lg:py-8 2xl:px-10 min-[1710px]:px-8">
         <div className="mx-auto flex w-full max-w-[1232px] 2xl:max-w-[1400px] min-[1710px]:max-w-[1710px] flex-col-reverse items-center justify-center gap-10 lg:min-h-[569px] lg:gap-12 xl:flex-row xl:items-center xl:justify-between min-[1710px]:gap-20">
-          {/* TEXT */}
           <div className="flex w-full max-w-[461px] flex-col text-center leading-none lg:max-w-[520px] xl:flex-1 xl:text-left">
             <h1 className="text-[40px] font-bold text-[#2E7D32] sm:text-[52px] lg:text-[60px] xl:text-[72px]">
               İkinci
@@ -62,8 +61,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* IMAGES */}
-          <div className="grid w-full max-w-[300px] grid-cols-[1.15fr_0.95fr] gap-4 sm:max-w-[390px] sm:gap-5 md:max-w-[560px] md:grid-cols-[1fr_0.78fr] md:gap-6 lg:max-w-[320px] lg:grid-cols-1 lg:flex-shrink-0 xl:max-w-[560px] xl:grid-cols-[320px_224px]">
+          <div className="grid w-full max-w-[300px] grid-cols-[1.15fr_0.95fr] gap-4 sm:max-w-[390px] sm:gap-5 md:max-w-[560px] md:grid-cols-[1fr_0.78fr] md:gap-6 lg:max-w-nonelg:grid-cols-1 lg:flex-shrink-0 xl:max-w-[560px] xl:grid-cols-[320px_224px]">
             <img
               className="h-[300px] w-full -rotate-3 self-center rounded-[32px] object-cover shadow-[0_18px_45px_rgba(46,125,50,0.16)] sm:h-[390px] md:h-[420px] lg:h-[360px] xl:h-[450px] xl:rounded-[40px]"
               src="https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg"
@@ -86,6 +84,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <section className="w-full bg-[#F8F8F9]">
         <div className="h-[40px] md:h-[80px]"></div>
 
@@ -94,7 +93,6 @@ const Home = () => {
                   flex flex-col md:flex-row 
                   justify-between gap-6 md:gap-[24px] px-4"
         >
-          {/* LEFT */}
           <div className="w-full md:w-[568px]">
             <h3 className="text-[28px] md:text-[40px] font-semibold mb-4 md:mb-6 tracking-[0.2px]">
               Haqqımızda
@@ -124,7 +122,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="w-full md:w-[600px]">
             <img
               src={photo}
@@ -134,6 +131,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="bg-[#F8F8F9] w-full pt-8 md:pt-12">
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 md:px-6 2xl:px-4">
           <h4 className="text-[28px] md:text-[40px] font-semibold mb-4 md:mb-6 tracking-[0.2px]">
@@ -150,7 +148,6 @@ const Home = () => {
             </button>
           </div>
 
-          {/* GRID FIX */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-6">
             <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
               <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
@@ -318,7 +315,6 @@ const Home = () => {
             </button>
           </div>
 
-          {/* GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
             <div className="w-full relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
               <img
@@ -519,7 +515,6 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <div className="w-full max-w-[389px] mx-auto h-auto border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
               <div className="flex justify-between items-start">
-                {/* ICON BLOCK */}
                 <div className="relative w-[64px] h-[64px]">
                   <div
                     className="w-[64px] h-[64px] rounded-2xl 
@@ -641,7 +636,6 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* BUTTON */}
                 <button
                   className="bg-[#4CAF501A] 
                  flex justify-center items-center gap-3 
@@ -1180,14 +1174,12 @@ const Home = () => {
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto h-auto px-4 md:px-6 2xl:px-4">
           <div className="bg-gradient-to-br from-[#4CAF50] via-[#81C784] to-[#E8F5E9] rounded-[24px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 px-4 md:px-10 py-6 md:py-10 gap-6 items-center">
-              {/* IMAGE */}
               <img
                 className="w-full max-w-[495px] mx-auto h-[220px] sm:h-[300px] md:h-[380px] lg:h-[513px] rounded-[12px] object-cover"
                 src={location}
                 alt=""
               />
 
-              {/* FORM */}
               <form className="bg-white w-full max-w-[495px] mx-auto rounded-[12px] p-4 md:p-6">
                 <div className="flex items-center gap-2">
                   <span className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#4CAF501A] text-[#4CAF50] text-lg md:text-xl flex justify-center items-center">
