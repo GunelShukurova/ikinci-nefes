@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/2b8acccb9353ba07dbdf1aac581ca3d988d7125f.png";
 import { FaBars } from "react-icons/fa6";
+import { TbWorld } from "react-icons/tb";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isLangOpen, setIsLangOpen] = useState(false);
   const navLinks = [
     { label: "Ana səhifə", to: "/" },
     { label: "Haqqımızda", to: "/about" },
@@ -15,9 +17,23 @@ const Header = () => {
     { label: "Bloq", to: "/blog" },
     { label: "Əlaqə", to: "/contact" },
   ];
+  useEffect(() => {
+    const handleClick = () => {
+      setIsLangOpen(false);
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   return (
-    <div className="w-full bg-[#E8F5E9] relative">
+    <div
+      className="w-full bg-[#FDFEFD] relative"
+      onClick={() => setIsLangOpen(false)}
+    >
       <div className="max-w-[1440px] mx-auto min-h-[78px] px-4 md:px-6 xl:px-[105px] border-b border-[#E0E0E0]">
         <div className="max-w-[1231px] mx-auto min-h-[76px] flex items-center justify-between gap-3 md:gap-4 xl:gap-[72px]">
           <NavLink to="/" className="shrink-0">
@@ -42,6 +58,41 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <div className="relative">
+              <button
+                type="button"
+                className="flex items-center gap-2 bg-[#E8F5E9] text-[12px] font-normal py-[6px] px-[12px] rounded-full"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <TbWorld className="text-[#4CAF50]" />
+                AZ
+                <IoIosArrowDown
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsLangOpen((prev) => !prev);
+                  }}
+                  className={`cursor-pointer transition-transform duration-200 ${
+                    isLangOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {isLangOpen && (
+                <div className="absolute top-full right-0 mt-2 min-w-[70px] overflow-hidden rounded-xl border border-[#E0E0E0] bg-white shadow-md z-50">
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                    AZ
+                  </button>
+
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                    RU
+                  </button>
+
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                    EN
+                  </button>
+                </div>
+              )}
+            </div>
             <button className="hidden md:inline-flex items-center justify-center px-4 xl:px-6 h-[40px] md:h-[42px] xl:h-[44px] rounded-full bg-[#4CAF50] text-white text-sm md:text-[14px] xl:text-base whitespace-nowrap">
               Seansa yazıl
             </button>

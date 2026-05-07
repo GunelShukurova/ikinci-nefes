@@ -7,7 +7,7 @@ import { FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#DCEFDD]">
+    <footer className="w-full">
       <div className="mx-auto grid w-full max-w-[1232px] grid-cols-1 gap-10 px-7 py-[52px] sm:grid-cols-2 md:justify-items-center md:gap-x-12 lg:grid-cols-4 lg:gap-8 lg:px-10 lg:justify-items-stretch">
         <div className="flex flex-col gap-5 md:w-full md:max-w-[260px]">
           <div className="flex items-center gap-2">
