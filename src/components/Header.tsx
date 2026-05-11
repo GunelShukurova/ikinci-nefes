@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/2b8acccb9353ba07dbdf1aac581ca3d988d7125f.png";
 import { FaBars } from "react-icons/fa6";
-import { TbWorld } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
+import { LuSearch } from "react-icons/lu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,24 +47,24 @@ const Header = () => {
                 to={link.to}
                 end
                 className={({ isActive }) =>
-                  `text-[12px] xl:text-base transition-colors duration-200 hover:text-[#1B1B1B] ${
-                    isActive ? "text-[#1B1B1B] font-medium" : "text-[#6B7280]"
+                  `text-[12px] xl:text-base transition-colors duration-200 hover:text-[#F7941D] ${
+                    isActive ? "text-[#F7941D] font-medium" : "text-[#6B7280]"
                   }`
                 }
               >
                 {link.label}
               </NavLink>
             ))}
+        
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <div className="relative">
               <button
                 type="button"
-                className="flex items-center gap-2 bg-[#E8F5E9] text-[12px] font-normal py-[6px] px-[12px] rounded-full"
+                className="flex items-center gap-1 text-[12px] font-normal  border-b py-1"
                 onClick={(e) => e.stopPropagation()}
               >
-                <TbWorld className="text-[#4CAF50]" />
                 AZ
                 <IoIosArrowDown
                   onClick={(e) => {
@@ -78,21 +78,25 @@ const Header = () => {
               </button>
 
               {isLangOpen && (
-                <div className="absolute top-full right-0 mt-2 min-w-[70px] overflow-hidden rounded-xl border border-[#E0E0E0] bg-white shadow-md z-50">
-                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                <div className="absolute top-full right-0 mt-2 min-w-[15px] overflow-hidden rounded-xl border border-[#E0E0E0] bg-white shadow-md z-50">
+                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
                     AZ
                   </button>
 
-                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
                     RU
                   </button>
 
-                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
                     EN
                   </button>
                 </div>
               )}
+   
             </div>
+                      <div className="text-lg">
+                          <LuSearch/>
+                        </div>
             <button className="hidden md:inline-flex items-center justify-center px-4 xl:px-6 h-[40px] md:h-[42px] xl:h-[44px] rounded-full bg-[#4CAF50] text-white text-sm md:text-[14px] xl:text-base whitespace-nowrap">
               Seansa yazıl
             </button>

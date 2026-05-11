@@ -173,7 +173,7 @@ const Home = () => {
                   Ətraflı öyrən
                 </button>
 
-                <span className="w-[40px] h-[40px] rounded-full border border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
+                <span className="text-xl flex items-center justify-center text-[#4CAF50]">
                   <MdArrowOutward />
                 </span>
               </div>
@@ -191,10 +191,6 @@ const Home = () => {
             <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px]">
               Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər
             </p>
-
-            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
-              Hamısına bax <FaArrowRight />
-            </button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-6 ">
@@ -251,87 +247,97 @@ const Home = () => {
               </div>
             ))}
           </div>
+          <div className="flex justify-end mt-6">
+            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
+              Hamısına bax <FaArrowRight />
+            </button>
+          </div>
         </div>
       </section>
-<section className="bg-[#F8F8F9] w-full">
-  <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 py-10 md:py-14">
-
-    {/* TITLE */}
-    <h4 className="text-[24px] md:text-[40px] font-normal mb-6 tracking-[0.2px]">
-      Terapiya xidmətləri
-    </h4>
-
-    {/* FILTER BUTTONS */}
-    <div className="flex flex-wrap gap-3 md:gap-4 mb-6">
-      {["Psixoloq", "Psixopedaqoq", "Loqoped", "Duyu Bütövləmə", "Refleksoloq"].map((item, i) => (
-        <button
-          key={i}
-          className={`h-[40px] px-5 rounded-[12px] border text-sm transition
-          ${i === 0 
-            ? "text-[#F7941D] border-[#F7941D]" 
-            : "text-[#5D5E5F] border-[#E0E0E0] bg-white"
+      <section className="bg-[#F8F8F9] w-full">
+        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 py-10 md:py-14">
+          {/* TITLE */}
+          <h4 className="text-[24px] md:text-[40px] font-normal mb-3 tracking-[0.2px]">
+            Terapeftlərimiz
+          </h4>
+          <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px] mb-6">
+            Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər
+          </p>
+          {/* FILTER BUTTONS */}
+          <div className="flex flex-wrap gap-3 md:gap-4 mb-6">
+            {[
+              "Psixoloq",
+              "Psixopedaqoq",
+              "Loqoped",
+              "Duyu Bütövləmə",
+              "Refleksoloq",
+            ].map((item, i) => (
+              <button
+                key={i}
+                className={`h-[40px] px-5 rounded-[12px] border text-sm transition
+          ${
+            i === 0
+              ? "text-[#F7941D] border-[#F7941D]"
+              : "text-[#5D5E5F] border-[#E0E0E0] bg-white"
           }`}
-        >
-          {item}
-        </button>
-      ))}
-    </div>
-
-    {/* GRID */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-
-      {[1,2,3,4].map((item) => (
-        <div
-          key={item}
-          className="relative bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col"
-        >
-
-          {/* IMAGE */}
-          <div className="relative h-[180px]">
-            <img
-              src="https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_82_standard-3.jpg"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-
-            {/* badge */}
-            <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-2xl text-xs flex items-center gap-1">
-              <span className="text-[#4CAF50]"><FaAward/></span>
-              Sertifikatlı
-            </div>
+              >
+                {item}
+              </button>
+            ))}
           </div>
 
-          {/* CONTENT */}
-          <div className="p-4 flex flex-col flex-1">
+          {/* GRID */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                key={item}
+                className="relative bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col"
+              >
+                {/* IMAGE */}
+                <div className="relative h-[180px]">
+                  <img
+                    src="https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_82_standard-3.jpg"
+                    className="w-full h-full object-cover"
+                    alt=""
+                  />
 
-            <h3 className="text-[16px] md:text-[18px] font-semibold">
-              Dr. Leyla Əliyeva
-            </h3>
+                  {/* badge */}
+                  <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-2xl text-xs flex items-center gap-1">
+                    <span className="text-[#4CAF50]">
+                      <FaAward />
+                    </span>
+                    Sertifikatlı
+                  </div>
+                </div>
 
-            <p className="text-[#4CAF50] text-sm mt-1">
-              Klinik Psixoloq
-            </p>
+                {/* CONTENT */}
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-[16px] md:text-[18px] font-semibold">
+                    Dr. Leyla Əliyeva
+                  </h3>
 
-            <span className="text-[#6B7280] text-sm mt-2">
-              12 il təcrübə
-            </span>
+                  <p className="text-[#4CAF50] text-sm mt-1">Klinik Psixoloq</p>
 
-            <div className="mt-4 border-t border-gray-200"></div>
+                  <span className="text-[#6B7280] text-sm mt-2">
+                    12 il təcrübə
+                  </span>
 
-            {/* BUTTON */}
-            <button className="mt-auto h-[44px] rounded-2xl border border-[#4CAF50] text-[#4CAF50] flex items-center justify-center gap-2 bg-[#F8FCF8]">
-              Profilə bax
-              <FaArrowRightLong />
+                  {/* BUTTON */}
+                  <button className="mt-3 h-[44px] rounded-2xl border border-[#4CAF50] text-[#4CAF50] flex items-center justify-center gap-2 bg-[#F8FCF8] ">
+                    Profilə bax
+                    <FaArrowRightLong />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-end mt-6">
+            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
+              Hamısına bax <FaArrowRight />
             </button>
-
           </div>
         </div>
-      ))}
-
-    </div>
-
-  </div>
-</section>
+      </section>
       <section className="bg-[#F8F8F9] w-full">
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto h-auto px-4 py-[52px] md:px-6 2xl:px-4">
           <h4 className="text-[28px] md:text-[40px] font-normal mb-5 tracking-[0.2px]">
@@ -501,11 +507,16 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="flex justify-end mt-6">
+            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
+              Hamısına bax <FaArrowRight />
+            </button>
+          </div>
         </div>
       </section>
       <section className="bg-[#F8F8F9] w-full">
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto h-auto px-4 py-[52px] md:px-6 2xl:px-4">
-          <h4 className="text-[28px] md:text-[40px] font-semibold mb-5 tracking-[0.2px]">
+          <h4 className="text-[28px] md:text-[40px] font-normal mb-5 tracking-[0.2px]">
             Bloq və Məqalələr
           </h4>
 
@@ -513,9 +524,6 @@ const Home = () => {
             <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px]">
               Psixoloji sağlamlıq haqqında faydalı məlumatlar
             </p>
-            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
-              Hamısına bax <FaArrowRight />
-            </button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-7">
             <div className="w-full max-w-[384px] mx-auto h-auto relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
@@ -663,61 +671,228 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="flex justify-end mt-6">
+            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
+              Hamısına bax <FaArrowRight />
+            </button>
+          </div>
         </div>
       </section>
-    <section className="bg-[#F8F8F9] w-full pb-10">
-  <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 md:px-6 2xl:px-4">
+      <section className="bg-[#F8F8F9] w-full">
+        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto h-auto px-4 py-[52px] md:px-6 2xl:px-4">
+          <h4 className="text-[28px] md:text-[40px] font-normal mb-5 tracking-[0.2px]">
+            Aktual Xəbərlər
+          </h4>
 
-    <div className="bg-gradient-to-br from-[#4CAF50] via-[#81C784] to-[#E8F5E9] rounded-[24px]">
-
-      {/* GRID FIX */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 md:px-10 py-6 md:py-10">
-
-        {/* IMAGE */}
-        <img
-          className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[513px] rounded-[12px] object-cover"
-          src={location}
-          alt=""
-        />
-
-        {/* FORM */}
-        <form className="bg-white w-full rounded-[12px] p-4 md:p-6">
-
-          <div className="flex items-center gap-2">
-            <span className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#4CAF501A] text-[#4CAF50] flex items-center justify-center">
-              <LuCalendar />
-            </span>
-
-            <span className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold">
-              Online rezervasiya
-            </span>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
+            <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px]">
+              Mental sağlamlıq və psixoloji rifahın təmin edilməsi üçün mütəmadi
+              seminar və təlimlərimiz keçirilir.
+            </p>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-7">
+            <div className="w-full max-w-[600px] mx-auto h-full flex flex-col relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
+              <img
+                className="w-full h-[220px] sm:h-[260px] md:h-[330px] object-cover"
+                src="https://static.youngpostclub.com/article_image/sites/default/files/d8/images/canvas/2025/12/29/4fd0d437-cc46-467e-a727-5315920d66af_3abba7d0.jpg?image_process=image/resize,w_2180/crop,x_0,y_186,w_2179,h_1453/quality,Q_75"
+                alt=""
+              />
 
-          <div className="flex flex-col gap-[10px] mt-5">
-            <label className="text-[14px] font-medium">Psixoloq seçin</label>
-            <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]" />
+              <div className="p-5 flex flex-col flex-1">
+                <div className="mb-4">
+                  <div className="flex  flex-col gap-2 text-sm mt-2">
+                    <span className="text-[24px] md:text-[24px] font-semibold tracking-[0.2px] text-[#F7941D]">
+                      Stress və Anksiyete
+                    </span>
+                    <p className="text-[#364153] font-normal text-[14px]">
+                      Gündəlik stress beyinə ciddi təsir göstərir və anksiyete
+                      pozuntusu ilə nəticələnə bilər. Anksiyete pozuntusunun
+                      ilkin əlamətləri arasında davamlı narahatlıq, yuxusuzluq
+                      və fiziki gərginlik sayıla bilər. Psixoloji mərkəzimizdə
+                      stress zamanı nəfəs texnikaları və digər effektiv
+                      üsullarla müalicə təklif edirik. Hər bir şəxsin fərdi
+                      ehtiyaclarına uyğun terapiya planı hazırlanır və mental
+                      sağlamlığın qorunması üçün peşəkar dəstək verilir.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-[15px] md:text-[16px] font-medium text-[#4CAF50]">
+                    Məqaləni oxu
+                  </span>
+                  <span className="w-8 h-8 rounded-full bg-[#F8FCF8] text-[#4CAF50] flex justify-center items-center">
+                    <FaArrowRightLong />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-[600px] mx-auto h-full flex flex-col relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
+              <img
+                className="w-full h-[220px] sm:h-[260px] md:h-[330px] object-cover"
+                src="https://static.youngpostclub.com/article_image/sites/default/files/d8/images/canvas/2025/12/29/4fd0d437-cc46-467e-a727-5315920d66af_3abba7d0.jpg?image_process=image/resize,w_2180/crop,x_0,y_186,w_2179,h_1453/quality,Q_75"
+                alt=""
+              />
+
+              <div className="p-5 flex flex-col flex-1">
+                <div className="mb-4">
+                  <div className="flex  flex-col gap-2 text-sm mt-2">
+                    <span className="text-[24px] md:text-[24px] font-semibold tracking-[0.2px] text-[#F7941D]">
+                      Depressiya
+                    </span>
+                    <p className="text-[#364153] font-normal text-[14px]">
+                      Depressiya ilə mübarizədə psixoloji dəstəyin rolu
+                      əvəzolunmazdır. Uzunmüddətli yorğunluq və emosional
+                      tükənmə depressiyanın əsas əlamətləridir. Müasir həyat
+                      tempi və gündəlik çətinliklər depressiya riskini artırır.
+                      Mərkəzimizdə təcrübəli psixoloqlar tərəfindən fərdi və
+                      qrup terapiyaları təşkil olunur. Hər bir xəstəyə özəl
+                      yanaşma və davamlı müşahidə ilə sağlamlığın bərpası təmin
+                      edilir.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-[15px] md:text-[16px] font-medium text-[#4CAF50]">
+                    Məqaləni oxu
+                  </span>
+                  <span className="w-8 h-8 rounded-full bg-[#F8FCF8] text-[#4CAF50] flex justify-center items-center">
+                    <FaArrowRightLong />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-[600px] mx-auto h-full flex flex-col relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
+              <img
+                className="w-full h-[220px] sm:h-[260px] md:h-[330px] object-cover"
+                src="https://static.youngpostclub.com/article_image/sites/default/files/d8/images/canvas/2025/12/29/4fd0d437-cc46-467e-a727-5315920d66af_3abba7d0.jpg?image_process=image/resize,w_2180/crop,x_0,y_186,w_2179,h_1453/quality,Q_75"
+                alt=""
+              />
+
+              <div className="p-5 flex flex-col flex-1">
+                <div className="mb-4">
+                  <div className="flex  flex-col gap-2 text-sm mt-2">
+                    <span className="text-[24px] md:text-[24px] font-semibold tracking-[0.2px] text-[#F7941D]">
+                      Stress və Anksiyete
+                    </span>
+                    <p className="text-[#364153] font-normal text-[14px]">
+                      Gündəlik stress beyinə ciddi təsir göstərir və anksiyete
+                      pozuntusu ilə nəticələnə bilər. Anksiyete pozuntusunun
+                      ilkin əlamətləri arasında davamlı narahatlıq, yuxusuzluq
+                      və fiziki gərginlik sayıla bilər. Psixoloji mərkəzimizdə
+                      stress zamanı nəfəs texnikaları və digər effektiv
+                      üsullarla müalicə təklif edirik. Hər bir şəxsin fərdi
+                      ehtiyaclarına uyğun terapiya planı hazırlanır və mental
+                      sağlamlığın qorunması üçün peşəkar dəstək verilir.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-[15px] md:text-[16px] font-medium text-[#4CAF50]">
+                    Məqaləni oxu
+                  </span>
+                  <span className="w-8 h-8 rounded-full bg-[#F8FCF8] text-[#4CAF50] flex justify-center items-center">
+                    <FaArrowRightLong />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-[600px] mx-auto h-full flex flex-col relative rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-100">
+              <img
+                className="w-full h-[220px] sm:h-[260px] md:h-[330px] object-cover"
+                src="https://static.youngpostclub.com/article_image/sites/default/files/d8/images/canvas/2025/12/29/4fd0d437-cc46-467e-a727-5315920d66af_3abba7d0.jpg?image_process=image/resize,w_2180/crop,x_0,y_186,w_2179,h_1453/quality,Q_75"
+                alt=""
+              />
+
+              <div className="p-5 flex flex-col flex-1">
+                <div className="mb-4">
+                  <div className="flex  flex-col gap-2 text-sm mt-2">
+                    <span className="text-[24px] md:text-[24px] font-semibold tracking-[0.2px] text-[#F7941D]">
+                      Depressiya
+                    </span>
+                    <p className="text-[#364153] font-normal text-[14px]">
+                      Depressiya ilə mübarizədə psixoloji dəstəyin rolu
+                      əvəzolunmazdır. Uzunmüddətli yorğunluq və emosional
+                      tükənmə depressiyanın əsas əlamətləridir. Müasir həyat
+                      tempi və gündəlik çətinliklər depressiya riskini artırır.
+                      Mərkəzimizdə təcrübəli psixoloqlar tərəfindən fərdi və
+                      qrup terapiyaları təşkil olunur. Hər bir xəstəyə özəl
+                      yanaşma və davamlı müşahidə ilə sağlamlığın bərpası təmin
+                      edilir.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-[15px] md:text-[16px] font-medium text-[#4CAF50]">
+                    Məqaləni oxu
+                  </span>
+                  <span className="w-8 h-8 rounded-full bg-[#F8FCF8] text-[#4CAF50] flex justify-center items-center">
+                    <FaArrowRightLong />
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div className="flex flex-col gap-[10px] mt-5">
-            <label className="text-[14px] font-medium">Tarix seçin</label>
-            <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]" />
+          <div className="flex justify-end mt-6">
+            <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
+              Hamısına bax <FaArrowRight />
+            </button>
           </div>
+        </div>
+      </section>
+      <section className="bg-[#F8F8F9] w-full pb-10">
+        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 md:px-6 2xl:px-4">
+          <div className=" rounded-[24px]">
+            {/* GRID FIX */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center px-4 md:px-6 lg:px-10 py-6 md:py-8 lg:py-10">
+              {/* IMAGE */}
+           
+              {/* FORM */}
+              <form className="bg-white w-full rounded-[12px] p-4 md:p-6">
+                <div className="flex items-center gap-2">
+                  <span className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#4CAF501A] text-[#4CAF50] flex items-center justify-center">
+                    <LuCalendar />
+                  </span>
 
-          <div className="flex flex-col gap-[10px] mt-5">
-            <label className="text-[14px] font-medium">Saat seçin</label>
-            <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]" />
+                  <span className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold">
+                    Online rezervasiya
+                  </span>
+                </div>
+
+                <div className="flex flex-col gap-[10px] mt-5">
+                  <label className="text-[14px] font-medium">
+                    Psixoloq seçin
+                  </label>
+                  <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]" />
+                </div>
+
+                <div className="flex flex-col gap-[10px] mt-5">
+                  <label className="text-[14px] font-medium">Tarix və saat seçin</label>
+                  <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]" />
+                </div>
+
+                <div className="flex flex-col gap-[10px] mt-5">
+                  <label className="text-[14px] font-medium">Telefon</label>
+                  <input className="w-full h-[48px] md:h-[55px] bg-[#C8E6C94D] rounded-[16px]  text-md px-3" placeholder="+994 50 555 55 55"/>
+                </div>
+
+                <button className="bg-[#4CAF50] text-white w-full h-[48px] md:h-[56px] rounded-[16px] mt-7">
+                  Mövcud saatları göstər
+                </button>
+              </form>
+                 <img
+                className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[513px] rounded-[12px] object-cover"
+                src={location}
+                alt=""
+              />
+
+            </div>
           </div>
-
-          <button className="bg-[#4CAF50] text-white w-full h-[48px] md:h-[56px] rounded-[16px] mt-7">
-            Mövcud saatları göstər
-          </button>
-
-        </form>
-
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
     </>
   );
 };
