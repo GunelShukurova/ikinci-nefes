@@ -9,6 +9,7 @@ import Services1 from "../pages/Services1";
 import Specialist1 from "../pages/Specialist1";
 
 import Specialists from "../pages/Specialists";
+import Test1 from "../pages/Test1";
 import Tests from "../pages/Tests";
 
 const ROUTES = [
@@ -44,6 +45,10 @@ const ROUTES = [
       {
         element: <Tests />,
         path: "tests",
+      },
+       {
+        element: <Test1 />,
+        path: "test1",
       },
         {
         element: <Blog1 />,

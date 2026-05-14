@@ -1,6 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
-import { LuBrain } from "react-icons/lu";
+
 
 import { FiCalendar } from "react-icons/fi";
 
@@ -8,8 +8,8 @@ const Services = () => {
   return (
     <>
      
-      <section className="bg-[#F8F8F9] w-full pt-8 md:pt-12 pb-10">
-        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 md:px-6 2xl:px-4">
+       <section className="bg-[#F8F8F9] w-full pt-8 md:pt-12  ">
+        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 md:px-6 2xl:px-4 pb-15">
           <h4 className="text-[28px] md:text-[40px] font-normal mb-4 md:mb-6 tracking-[0.2px]">
             Xidmətlərimiz
           </h4>
@@ -18,159 +18,66 @@ const Services = () => {
             <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px]">
               Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər
             </p>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-6 ">
+            {[1, 2, 3, 4, 5, 6].map((item) => (
+              <div
+                key={item}
+                className="
+    relative
+    w-full h-[415px]
+    rounded-3xl
+    overflow-hidden
+    bg-white
+    border border-gray-100
+    shadow
+    p-[20px]
+  "
+              >
+                {/* bottom glow */}
+
+                <div
+                  className="
+      absolute inset-0 rounded-3xl pointer-events-none
+      border-b-[2px] border-[#F7941D]
+    "
+                  style={{
+                    boxShadow: "0 12px 0px -18px #F7941D inset",
+                  }}
+                ></div>
+                <img
+                  className="w-full h-[240px] rounded-[16px] aspect-[3/4] object-cover"
+                  src="https://media.istockphoto.com/id/1947499362/photo/happy-group-of-business-people-discussing-strategy-during-team-meeting-at-the-office-desk.jpg?s=612x612&w=0&k=20&c=UXPrlQx09d8EP4_kTdAa-vC2LxD_ppY1tiG7eTPGVbE="
+                  alt="psychologist"
+                />
+
+                <div className="p-2 md:p-5 flex flex-col ">
+                  <span className="text-[24px] md:text-[20px] font-semibold text-[#4CAF50]">
+                    Ailə Terapiyası
+                  </span>
+
+                  <span className="text-[#6B7280] font-normal text-[12px] md:text-[16px]">
+                    Şəxsi problemləriniz üçün
+                  </span>
+
+                  <div className="flex items-center justify-between gap-3 pt-5">
+                    <button className="text-[14px] md:text-[16px] font-medium text-[#4CAF50]">
+                      Ətraflı öyrən
+                    </button>
+
+                    <span className="w-[30px] h-[30px] rounded-full   bg-[#F8FCF8] flex items-center justify-center text-[#4CAF50]">
+                      <MdArrowOutward />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-end mt-6">
             <button className="text-[#4CAF50] text-[14px] md:text-[16px] font-medium flex items-center gap-2">
               Hamısına bax <FaArrowRight />
             </button>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-6">
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
-
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
-
-            <div className="w-full h-auto md:h-[323px] border border-[#E0E0E0] bg-white rounded-3xl flex flex-col gap-5 p-6 md:p-10">
-              <div className="w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[linear-gradient(135deg,#4CAF50_0%,#81C784_100%)] border border-[#f0f8f1f0] border-[7px]">
-                <LuBrain className="text-white w-[32px] h-[32px]" />
-              </div>
-
-              <span className="text-[18px] md:text-[20px] font-semibold">
-                Ailə Məsləhətləşməsi
-              </span>
-
-              <p className="text-[14px] md:text-[15px] text-[#6B7280] tracking-[0.2px]">
-                Ailə münasibətlərini gücləndirmək və ünsiyyət problemlərini həll
-                etmək
-              </p>
-
-              <div className="flex justify-between items-center mt-auto">
-                <button className="text-[14px] md:text-[16px] text-[#4CAF50]">
-                  Ətraflı öyrən
-                </button>
-
-                <span className="w-[40px] h-[40px] border rounded-full text-[20px] border-[#4CAF5033] flex items-center justify-center text-[#4CAF50]">
-                  <MdArrowOutward />
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>

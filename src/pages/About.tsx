@@ -1,9 +1,50 @@
 import photo from "../assets/826bbec161d35d870c840383173f57f09e485ecd.jpg";
 import photo2 from "../assets/61dde147b925875272f6ca80d9801613c3e45e00.png";
+import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaAward } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+
+type StatCounterProps = {
+  duration?: number;
+  end: number;
+  start: boolean;
+};
+
+const StatCounter = ({ duration = 2, end, start }: StatCounterProps) => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (!start) {
+      return;
+    }
+
+    let frameId = 0;
+    const startTime = performance.now();
+
+    const tick = (currentTime: number) => {
+      const progress = Math.min((currentTime - startTime) / (duration * 1000), 1);
+      setValue(Math.round(end * progress));
+
+      if (progress < 1) {
+        frameId = window.requestAnimationFrame(tick);
+      }
+    };
+
+    frameId = window.requestAnimationFrame(tick);
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, [duration, end, start]);
+
+  return <>{value}</>;
+};
 
 const About = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+  
   return (
     <>
       <section className="bg-[#F8F8F9]">
@@ -105,7 +146,7 @@ const About = () => {
         </div>
       </section>
       <section className="bg-[#F8F8F9] w-full">
-        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 py-[52px]">
+        <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 py-[32px]">
           {/* HEADER */}
           <h4 className="text-[28px] md:text-[40px] font-normal mb-5 tracking-[0.2px]">
             Komandamız
@@ -171,7 +212,7 @@ const About = () => {
           </div>
 
           {/* TEAM GRID */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 mt-10">
             {[1, 2, 3, 4].map((item) => (
               <div
                 key={item}
@@ -255,12 +296,12 @@ const About = () => {
                   <p className="text-[13px] md:text-[15px] font-normal text-[#6B7280]">
                     Uşaqlarda emosional inkişafın necə formalaşdığı və valideyn
                     davranışlarının uşağın psixologiyasına təsiri mövzusunda
-                    tövsiyələr..
+                    tövsiyələr.
                   </p>
 
                   <div className="mt-auto pt-4">
                     <button className="w-full h-[44px] rounded-2xl border border-[#4CAF50] text-[#4CAF50] flex items-center justify-center gap-2 bg-[#F8FCF8]">
-                      Profilə bax
+                      Ətraflı bax
                       <FaArrowRightLong />
                     </button>
                   </div>
@@ -272,35 +313,50 @@ const About = () => {
       </section>
       <section className="bg-[#F8F8F9] w-full">
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto py-[50px] px-4 md:px-6 2xl:px-4">
-          <div className="border-l-20 border-r-20 border-l-[#F7941D] border-r-[#F7941D] rounded-r-[12px] rounded-l-[12px] py-10 px-6 md:px-10">
+          <div
+            ref={ref}
+            className="rounded-[20px] bg-white border border-[#E5E7EB] shadow-sm border-l-[20px] border-r-[20px] border-l-[#F7941D] border-r-[#F7941D] py-10 px-6 md:px-10"
+          >
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* ITEM */}
               <div className="flex flex-col items-center text-center border-t-4 border-t-[#F7941D] pt-4">
-                <span className="text-[40px] md:text-[56px] font-bold">12</span>
+                <span className="text-[40px] md:text-[56px] font-bold text-[#364153] min-h-[60px] md:min-h-[84px]">
+                  <StatCounter end={12} duration={2} start={inView} />
+                </span>
+
                 <span className="text-[14px] font-normal text-[#4A5565]">
                   İl təcrübə
                 </span>
               </div>
 
+              {/* ITEM */}
               <div className="flex flex-col items-center text-center border-t-4 border-t-[#F7941D] pt-4">
-                <span className="text-[40px] md:text-[56px] font-bold">
-                  1500+
+                <span className="text-[40px] md:text-[56px] font-bold text-[#364153] min-h-[60px] md:min-h-[84px]">
+                  <StatCounter end={1500} duration={2.5} start={inView} />+
                 </span>
+
                 <span className="text-[14px] font-normal text-[#4A5565]">
                   Uğurlu müalicə
                 </span>
               </div>
 
+              {/* ITEM */}
               <div className="flex flex-col items-center text-center border-t-4 border-t-[#F7941D] pt-4">
-                <span className="text-[40px] md:text-[56px] font-bold">8</span>
+                <span className="text-[40px] md:text-[56px] font-bold text-[#364153] min-h-[60px] md:min-h-[84px]">
+                  <StatCounter end={8} duration={2} start={inView} />
+                </span>
+
                 <span className="text-[14px] font-normal text-[#4A5565]">
                   Peşəkar psixoloq
                 </span>
               </div>
 
+              {/* ITEM */}
               <div className="flex flex-col items-center text-center border-t-4 border-t-[#F7941D] pt-4">
-                <span className="text-[40px] md:text-[56px] font-bold">
-                  95%
+                <span className="text-[40px] md:text-[56px] font-bold text-[#364153] min-h-[60px] md:min-h-[84px]">
+                  <StatCounter end={95} duration={2.5} start={inView} />%
                 </span>
+
                 <span className="text-[14px] font-normal text-[#4A5565]">
                   Müştəri məmnuniyyəti
                 </span>

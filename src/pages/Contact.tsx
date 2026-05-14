@@ -17,7 +17,7 @@ const Contact = () => {
           </div>
 
           {/* MAIN CONTENT */}
-          <div className="mt-10 flex flex-col lg:flex-row gap-8">
+       <div className="mt-10 flex flex-col lg:flex-row gap-8 items-stretch">
             
             {/* FORM */}
             <form className="flex flex-col gap-6 w-full lg:w-[70%]">
@@ -35,7 +35,7 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="Ad və soyadınızı daxil edin"
-                      className="w-full h-[52px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
+                      className="w-full h-[47px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
                     />
                   </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="+994 50 555 55 55"
-                      className="w-full h-[52px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
+                      className="w-full h-[47px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
                     />
                   </div>
                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                     <input
                       type="email"
                       placeholder="example@gmail.com"
-                      className="w-full h-[52px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
+                      className="w-full h-[47px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none"
                     />
                   </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
                       Sorğu Növü *
                     </label>
 
-                    <select className="w-full h-[52px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none">
+                    <select className="w-full h-[47px] rounded-[12px] border border-[#E5E7EB] bg-white px-4 outline-none">
                       <option>Seçin</option>
                       <option>Psixoloji dəstək</option>
                       <option>Rezervasiya</option>
@@ -90,7 +90,7 @@ const Contact = () => {
                 <textarea
                   rows={6}
                   placeholder="Mesajınızı yazın..."
-                  className="w-full rounded-[12px] border border-[#E5E7EB] bg-white px-4 py-3 outline-none resize-none"
+                  className="w-full rounded-[12px] h-[97px] border border-[#E5E7EB] bg-white px-4 py-3 outline-none resize-none"
                 />
               </div>
 
@@ -114,8 +114,15 @@ const Contact = () => {
             </form>
 
             {/* CONTACT INFO */}
-            <div className="bg-white rounded-[24px] p-6 w-full lg:max-w-[390px] flex flex-col gap-6 border border-[#E5E7EB] h-fit">
-              
+<div className="relative bg-white rounded-[24px] p-6 w-full lg:max-w-[390px] flex flex-col gap-6 border border-[#E5E7EB] lg:self-stretch pt-15" >                   <div
+                  className="
+      absolute inset-0 rounded-3xl pointer-events-none
+      border-b-[2px] border-[#F7941D]
+    "
+                  style={{
+                    boxShadow: "0 12px 0px -18px #F7941D inset",
+                  }}
+                ></div>
               {/* PHONE */}
               <div className="flex gap-4 items-start">
                 <div className="min-w-[64px] h-[64px] rounded-2xl flex items-center justify-center bg-[#3593380c] border-[7px] border-[#f0f8f1f0]">
@@ -176,11 +183,15 @@ const Contact = () => {
                   <span className="text-[#4CAF50] text-[16px] font-medium leading-[24px]">
                     A. Nəbiyev küç. 15, Nəsimi Bakı, Azərbaycan
                   </span>
+                  
                 </div>
+                
               </div>
 
             </div>
+            
           </div>
+           
         </div>
       </section>
     </>

@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <div
-      className="w-full bg-[#FDFEFD] relative"
+      className="fixed inset-x-0 top-0 z-40 w-full bg-[#FDFEFD]"
       onClick={() => setIsLangOpen(false)}
     >
       <div className="max-w-[1440px] mx-auto min-h-[78px] px-4 md:px-6 xl:px-[105px] border-b border-[#E0E0E0]">
@@ -119,7 +119,7 @@ const Header = () => {
               <NavLink
                 key={link.label}
                 to={link.to}
-                onClick={() => setIsMenuOpen(false)} // ✅ ВОТ СЮДА
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `text-[12px] xl:text-base transition-colors duration-200 hover:text-[#1B1B1B] ${
                     isActive ? "text-[#1B1B1B] font-medium" : "text-[#6B7280]"
