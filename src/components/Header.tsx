@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/2b8acccb9353ba07dbdf1aac581ca3d988d7125f.png";
 import { FaBars } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
-import { LuSearch } from "react-icons/lu";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
     { label: "Ana səhifə", to: "/" },
     { label: "Haqqımızda", to: "/about" },
     { label: "Xidmətlər", to: "/services" },
-    { label: "Psixoloqlar", to: "/psychologists" },
+    { label: "Mütəxəssislər", to: "/psychologists" },
     { label: "Testlər", to: "/tests" },
     { label: "Bloq", to: "/blog" },
     { label: "Əlaqə", to: "/contact" },
@@ -94,9 +94,7 @@ const Header = () => {
               )}
    
             </div>
-                      <div className="text-lg">
-                          <LuSearch/>
-                        </div>
+                     
             <button className="hidden md:inline-flex items-center justify-center px-4 xl:px-6 h-[40px] md:h-[42px] xl:h-[44px] rounded-full bg-[#4CAF50] text-white text-sm md:text-[14px] xl:text-base whitespace-nowrap">
               Seansa yazıl
             </button>

@@ -9,6 +9,8 @@ import { FiFileText } from "react-icons/fi";
 import { LuCalendar } from "react-icons/lu";
 import location from "../assets/c64634f190d431874d2b5548fcad4e8e6f0d2c60.jpg";
 import image from "../assets/23494090d9b04e61694b8d1ac85e55051dd4b58b.jpg";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const Home = () => {
   const gradientText = {
@@ -29,22 +31,17 @@ const Home = () => {
               className="font-bold leading-[1.1] text-[36px] sm:text-[44px] lg:text-[60px] xl:text-[72px]"
               style={gradientText}
             >
-              Psixi Sağlamlığınız
+          İkinci Nəfəsinizi 
             </h1>
 
             <h2
               className="font-bold leading-[1.1] text-[36px] sm:text-[44px] lg:text-[60px] xl:text-[72px]"
               style={gradientText}
             >
-              Üçün Peşəkar
+          Tapın
             </h2>
 
-            <h3
-              className="font-bold leading-[1.1] text-[36px] sm:text-[44px] lg:text-[60px] xl:text-[72px]"
-              style={gradientText}
-            >
-              Dəstək
-            </h3>
+            
 
             <div className="relative inline-block mt-2">
               <svg
@@ -70,7 +67,7 @@ const Home = () => {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
               <button className="h-[52px] sm:w-[194px] w-full rounded-2xl bg-[#4CAF50] text-white flex items-center justify-center gap-2">
-                Seansa yazıl <FaArrowRight />
+                Seansa yazıl <IoIosArrowForward />
               </button>
 
               <button className="h-[52px] sm:w-[161px] w-full rounded-2xl border border-[#E0E0E0] bg-white font-semibold">
@@ -254,11 +251,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8F8F9] w-full">
+     <section className="bg-[#F8F8F9] w-full">
         <div className="max-w-[1232px] 2xl:max-w-[1400px] w-full mx-auto px-4 py-10 md:py-14">
           {/* TITLE */}
           <h4 className="text-[24px] md:text-[40px] font-normal mb-3 tracking-[0.2px]">
-            Terapeftlərimiz
+            Mütəxəssislər
           </h4>
           <p className="text-[16px] md:text-[18px] text-[#6B7280] tracking-[0.2px] mb-6">
             Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər
@@ -274,7 +271,7 @@ const Home = () => {
             ].map((item, i) => (
               <button
                 key={i}
-                className={`h-[40px] px-5 rounded-[12px] border text-sm transition
+                className={`h-[40px] px-5 rounded-[16px] border text-sm transition
           ${
             i === 0
               ? "text-[#F7941D] border-[#F7941D]"
@@ -706,13 +703,7 @@ const Home = () => {
                     </span>
                     <p className="text-[#364153] font-normal text-[14px]">
                       Gündəlik stress beyinə ciddi təsir göstərir və anksiyete
-                      pozuntusu ilə nəticələnə bilər. Anksiyete pozuntusunun
-                      ilkin əlamətləri arasında davamlı narahatlıq, yuxusuzluq
-                      və fiziki gərginlik sayıla bilər. Psixoloji mərkəzimizdə
-                      stress zamanı nəfəs texnikaları və digər effektiv
-                      üsullarla müalicə təklif edirik. Hər bir şəxsin fərdi
-                      ehtiyaclarına uyğun terapiya planı hazırlanır və mental
-                      sağlamlığın qorunması üçün peşəkar dəstək verilir.
+                      pozuntusu ilə nəticələnə bilər. 
                     </p>
                   </div>
                 </div>
@@ -742,13 +733,7 @@ const Home = () => {
                     </span>
                     <p className="text-[#364153] font-normal text-[14px]">
                       Depressiya ilə mübarizədə psixoloji dəstəyin rolu
-                      əvəzolunmazdır. Uzunmüddətli yorğunluq və emosional
-                      tükənmə depressiyanın əsas əlamətləridir. Müasir həyat
-                      tempi və gündəlik çətinliklər depressiya riskini artırır.
-                      Mərkəzimizdə təcrübəli psixoloqlar tərəfindən fərdi və
-                      qrup terapiyaları təşkil olunur. Hər bir xəstəyə özəl
-                      yanaşma və davamlı müşahidə ilə sağlamlığın bərpası təmin
-                      edilir.
+                      əvəzolunmazdır. 
                     </p>
                   </div>
                 </div>
@@ -778,13 +763,7 @@ const Home = () => {
                     </span>
                     <p className="text-[#364153] font-normal text-[14px]">
                       Gündəlik stress beyinə ciddi təsir göstərir və anksiyete
-                      pozuntusu ilə nəticələnə bilər. Anksiyete pozuntusunun
-                      ilkin əlamətləri arasında davamlı narahatlıq, yuxusuzluq
-                      və fiziki gərginlik sayıla bilər. Psixoloji mərkəzimizdə
-                      stress zamanı nəfəs texnikaları və digər effektiv
-                      üsullarla müalicə təklif edirik. Hər bir şəxsin fərdi
-                      ehtiyaclarına uyğun terapiya planı hazırlanır və mental
-                      sağlamlığın qorunması üçün peşəkar dəstək verilir.
+                      pozuntusu ilə nəticələnə bilər. 
                     </p>
                   </div>
                 </div>
@@ -814,13 +793,7 @@ const Home = () => {
                     </span>
                     <p className="text-[#364153] font-normal text-[14px]">
                       Depressiya ilə mübarizədə psixoloji dəstəyin rolu
-                      əvəzolunmazdır. Uzunmüddətli yorğunluq və emosional
-                      tükənmə depressiyanın əsas əlamətləridir. Müasir həyat
-                      tempi və gündəlik çətinliklər depressiya riskini artırır.
-                      Mərkəzimizdə təcrübəli psixoloqlar tərəfindən fərdi və
-                      qrup terapiyaları təşkil olunur. Hər bir xəstəyə özəl
-                      yanaşma və davamlı müşahidə ilə sağlamlığın bərpası təmin
-                      edilir.
+                      əvəzolunmazdır. 
                     </p>
                   </div>
                 </div>
