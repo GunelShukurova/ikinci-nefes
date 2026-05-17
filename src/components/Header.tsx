@@ -1,22 +1,32 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/2b8acccb9353ba07dbdf1aac581ca3d988d7125f.png";
 import { FaBars } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const navLinks = [
-    { label: "Ana səhifə", to: "/" },
-    { label: "Haqqımızda", to: "/about" },
-    { label: "Xidmətlər", to: "/services" },
-    { label: "Mütəxəssislər", to: "/psychologists" },
-    { label: "Testlər", to: "/tests" },
-    { label: "Bloq", to: "/blog" },
-    { label: "Əlaqə", to: "/contact" },
+    { label: t("common.navbar.menu.home"), to: "/" },
+    { label: t("common.navbar.menu.about"), to: "/about" },
+    { label: t("common.navbar.menu.services"), to: "/services" },
+    { label: t("common.navbar.menu.specialists"), to: "/psychologists" },
+    { label: t("common.navbar.menu.tests"), to: "/tests" },
+    { label: t("common.navbar.menu.blog"), to: "/blog" },
+    { label: t("common.navbar.menu.contact"), to: "/contact" },
   ];
+  const currentLanguage = (i18n.resolvedLanguage || i18n.language || "az")
+    .slice(0, 2)
+    .toUpperCase();
+  const handleLanguageChange = (language: "az" | "ru" | "en") => {
+    void i18n.changeLanguage(language);
+    setIsLangOpen(false);
+    setIsMenuOpen(false);
+  };
   useEffect(() => {
     const handleClick = () => {
       setIsLangOpen(false);
@@ -65,7 +75,7 @@ const Header = () => {
                 className="flex items-center gap-1 text-[12px] font-normal  border-b py-1"
                 onClick={(e) => e.stopPropagation()}
               >
-                AZ
+                {currentLanguage}
                 <IoIosArrowDown
                   onClick={(e) => {
                     e.stopPropagation();
@@ -79,15 +89,24 @@ const Header = () => {
 
               {isLangOpen && (
                 <div className="absolute top-full right-0 mt-2 min-w-[15px] overflow-hidden rounded-xl border border-[#E0E0E0] bg-white shadow-md z-50">
-                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                  <button
+                    className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]"
+                    onClick={() => handleLanguageChange("az")}
+                  >
                     AZ
                   </button>
 
-                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                  <button
+                    className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]"
+                    onClick={() => handleLanguageChange("ru")}
+                  >
                     RU
                   </button>
 
-                  <button className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]">
+                  <button
+                    className="w-full px-3 py-2 text-left text-sm hover:bg-[#E8F5E9]"
+                    onClick={() => handleLanguageChange("en")}
+                  >
                     EN
                   </button>
                 </div>
@@ -95,8 +114,8 @@ const Header = () => {
    
             </div>
                      
-            <button className="hidden md:inline-flex items-center justify-center px-4 xl:px-6 h-[40px] md:h-[42px] xl:h-[44px] rounded-full bg-[#4CAF50] text-white text-sm md:text-[14px] xl:text-base whitespace-nowrap">
-              Seansa yazıl
+            <button className="hidden hover:cursor-pointer  md:inline-flex items-center justify-center px-4 xl:px-6 h-[40px] md:h-[42px] xl:h-[44px] rounded-full bg-[#4CAF50] text-white text-sm md:text-[14px] xl:text-base whitespace-nowrap">
+              {t("common.navbar.cta_button")}
             </button>
 
             <button
@@ -131,7 +150,7 @@ const Header = () => {
             ))}
 
             <button className="sm:hidden w-full h-[42px] rounded-full bg-[#4CAF50] text-white text-sm">
-              Seansa yazıl
+              {t("common.navbar.cta_button")}
             </button>
           </div>
         </div>

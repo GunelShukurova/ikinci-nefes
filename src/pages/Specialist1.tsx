@@ -2,8 +2,13 @@ import { FiBriefcase } from "react-icons/fi";
 import { FaAward } from "react-icons/fa";
 import { PiGraduationCap } from "react-icons/pi";
 import { LuBrain } from "react-icons/lu";
+import { useState } from "react";
 
 const Specialist1 = () => {
+
+
+  const [lang, setLang] = useState("AZ");
+
   return (
     <>
       <section className="bg-[#F8F8F9]">
@@ -39,21 +44,48 @@ const Specialist1 = () => {
                   Dil
                 </span>
 
-                <div className="flex flex-wrap gap-[10px]">
-                  <button className="text-[14px] font-normal border border-[#E0E0E0] bg-white min-w-[120px] h-[40px] rounded-[12px] ">
-                    Azərbaycan
-                  </button>
+                 <div className="flex flex-wrap gap-[10px]">
+                    <button
+                      onClick={() => setLang("AZ")}
+                      className={`text-[14px] font-normal hover:cursor-pointer min-w-[120px] h-[40px] rounded-[12px] border transition
+    ${
+      lang === "AZ"
+        ? "bg-[#4CAF50] text-white border-[#4CAF50]"
+        : "border-[#E0E0E0] bg-white text-[#364153]"
+    }
+  `}
+                    >
+                      Azərbaycan
+                    </button>
 
-                  <button className="text-[14px] font-normal border border-[#E0E0E0] bg-white min-w-[120px] h-[40px] rounded-[12px] ">
-                    İngilis
-                  </button>
+                    <button
+                      onClick={() => setLang("EN")}
+                      className={`text-[14px] font-normal  hover:cursor-pointer  min-w-[120px] h-[40px] rounded-[12px] border transition
+    ${
+      lang === "EN"
+        ? "bg-[#4CAF50] text-white border-[#4CAF50]"
+        : "border-[#E0E0E0] bg-white text-[#364153]"
+    }
+  `}
+                    >
+                      İngilis
+                    </button>
 
-                  <button className="text-[14px] font-normal border border-[#E0E0E0] bg-white min-w-[120px] h-[40px] rounded-[12px] ">
-                    Rus
-                  </button>
-                </div>
+                    <button
+                      onClick={() => setLang("RU")}
+                      className={`text-[14px] font-normal hover:cursor-pointer  min-w-[120px] h-[40px] rounded-[12px] border transition
+    ${
+      lang === "RU"
+        ? "bg-[#4CAF50] text-white border-[#4CAF50]"
+        : "border-[#E0E0E0] bg-white text-[#364153]"
+    }
+  `}
+                    >
+                      Rus
+                    </button>
+                  </div>
 
-                <button className="w-full sm:w-[150px] h-[48px] rounded-[12px] bg-[#4CAF50] text-white text-sm">
+                <button className="w-full hover:cursor-pointer  sm:w-[150px] h-[48px] rounded-[12px] bg-[#4CAF50] text-white text-sm">
                   Seansa yazıl
                 </button>
               </div>

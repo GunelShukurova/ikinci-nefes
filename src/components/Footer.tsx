@@ -4,8 +4,24 @@ import { GrLocation } from "react-icons/gr";
 import { LuFacebook } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+const footerLinks = [
+  { key: "home", to: "/" },
+  { key: "about", to: "/about" },
+  { key: "services", to: "/services" },
+  { key: "specialists", to: "/psychologists" },
+  { key: "tests", to: "/tests" },
+  { key: "blog", to: "/blog" },
+];
 
 const Footer = () => {
+  const { t } = useTranslation();
+
+  const serviceItems = t("common.footer.services", { returnObjects: true }) as string[];
+  const bottomLinks = t("common.footer.bottom_links", { returnObjects: true }) as string[];
+
   return (
     <footer className="w-full">
       <div className="mx-auto grid w-full max-w-[1232px] grid-cols-1 gap-10 px-7 py-[52px] sm:grid-cols-2 md:justify-items-center md:gap-x-12 lg:grid-cols-4 lg:gap-8 lg:px-10 lg:justify-items-stretch">
@@ -25,61 +41,63 @@ const Footer = () => {
             </div>
 
             <span className="text-[18px] sm:text-[20px] font-semibold tracking-wider">
-              Psixologiya Mərkəzi
+              {t("common.footer.brand_name")}
             </span>
           </div>
 
           <p className="text-[14px] leading-6 text-[#4F6F64]">
-            Peşəkar psixoloji xidmətlər və dəstək. Sizin emosional sağlamlığınız
-            bizim prioritetimizdir.
+            {t("common.footer.company_desc")}
           </p>
         </div>
 
         <div className="flex flex-col gap-5 md:w-full md:max-w-[260px]">
           <span className="text-[18px] sm:text-[20px] font-semibold">
-            Keçidlər
+            {t("common.footer.links_header")}
           </span>
           <ul className="space-y-2 text-sm sm:text-base text-[#4F6F64]">
-            <li>Ana səhifə</li>
-            <li>Haqqımızda</li>
-            <li>Xidmətlər</li>
-            <li>Psixoloqlar</li>
-            <li>Testlər</li>
-            <li>Bloq</li>
+            {footerLinks.map((link) => (
+              <li key={link.key}>
+                <NavLink
+                  to={link.to}
+                  className="transition-colors duration-200 hover:text-[#F7941D]"
+                >
+                  {t(`common.navbar.menu.${link.key}`)}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="flex flex-col gap-5 md:w-full md:max-w-[260px]">
           <span className="text-[18px] sm:text-[20px] font-semibold">
-            Xidmətlər
+            {t("common.footer.services_header")}
           </span>
           <ul className="space-y-2 text-sm sm:text-base text-[#4F6F64]">
-            <li>Fərdi terapiya</li>
-            <li>Cütlük məsləhətləşməsi</li>
-            <li>Ailə terapiyası</li>
-            <li>Uşaq psixologiyası</li>
+            {serviceItems.map((service) => (
+              <li key={service}>{service}</li>
+            ))}
           </ul>
         </div>
 
         <div className="flex flex-col gap-5 md:w-full md:max-w-[260px]">
           <span className="text-[18px] sm:text-[20px] font-semibold">
-            Əlaqə
+            {t("common.footer.contact_header")}
           </span>
 
           <ul className="space-y-3 text-sm sm:text-base text-[#4F6F64]">
             <li className="flex items-center gap-3">
               <LuPhone />
-              <span>+994 50 123 45 67</span>
+              <span>{t("common.footer.contacts.phone")}</span>
             </li>
 
             <li className="flex items-center gap-3">
               <LuMail />
-              <span>info@psixologiya.az</span>
+              <span>{t("common.footer.contacts.email")}</span>
             </li>
 
             <li className="flex items-center gap-3">
               <GrLocation />
-              <span>Bakı, Azərbaycan</span>
+              <span>{t("common.footer.contacts.address")}</span>
             </li>
 
             <li className="flex gap-3 pt-2">
@@ -99,11 +117,12 @@ const Footer = () => {
 
       <div className="mx-auto max-w-[1232px] border-t border-[#4CAF504D] px-4 py-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:justify-between text-sm text-[#4F6F64]">
-          <p>© 2026 İkinci Nəfəs. Bütün hüquqlar qorunur.</p>
+          <p>{t("common.footer.copyright")}</p>
 
           <div className="flex gap-3">
-            <span>Vakansiyalar</span>
-            <span>Gizlilik siyasəti</span>
+            {bottomLinks.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
           </div>
         </div>
       </div>

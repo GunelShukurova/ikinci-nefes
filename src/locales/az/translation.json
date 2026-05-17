@@ -1,0 +1,400 @@
+{
+  "common": {
+    "navbar": {
+      "menu": {
+        "home": "Ana səhifə",
+        "about": "Haqqımızda",
+        "services": "Xidmətlər",
+        "specialists": "Mütəxəssislər",
+        "tests": "Testlər",
+        "blog": "Bloq",
+        "contact": "Əlaqə"
+      },
+      "cta_button": "Seansa yazıl"
+    },
+    "footer": {
+      "brand_name": "Psixologiya Mərkəzi",
+      "company_desc": "Peşəkar psixoloji xidmətlər və dəstək. Sizin emosional sağlamlığınız bizim prioritetimizdir.",
+      "links_header": "Keçidlər",
+      "links": [
+        "Ana səhifə",
+        "Haqqımızda",
+        "Xidmətlər",
+        "Psixoloqlar",
+        "Testlər",
+        "Bloq"
+      ],
+      "services_header": "Xidmətlər",
+      "services": [
+        "Fərdi terapiya",
+        "Cütlük məsləhətləşməsi",
+        "Ailə terapiyası",
+        "Uşaq psixologiyası"
+      ],
+      "contact_header": "Əlaqə",
+      "contacts": {
+        "phone": "+994 50 123 45 67",
+        "email": "info@psixologiya.az",
+        "address": "Bakı, Azərbaycan"
+      },
+      "copyright": "© 2026 Psixologiya Mərkəzi. Bütün hüquqlar qorunur.",
+      "bottom_links": ["Vakansiyalar", "Gizlilik siyasəti"]
+    }
+  },
+  "home": {
+    "hero": {
+      "title_green": "İkinci Nəfəsinizi",
+      "title_yellow": "Tapın",
+      "description": "Uşaqlar və böyüklər üçün peşəkar psixoloji məsləhət. Təhlükəsiz, məxfi və effektiv terapiya xidmətləri ilə həyatınızı dəyişdirin.",
+      "buttons": {
+        "appointment": "Seansa yazıl",
+        "start_test": "Testə başla"
+      }
+    },
+    "about_preview": {
+      "header": "Haqqımızda",
+      "sub_header": "Psixoloji sağlamlığınız üçün ən yaxşı seçim",
+      "main_title": "Həqiqi insanlar, həqiqi nəticələr təqdim edirlər",
+      "description": "Psixologiya mərkəzimiz Azərbaycanda ən yüksək keyfiyyətli psixoloji xidmətlər təqdim etməyi hədəf alıb.",
+      "features": [
+        {
+          "title": "Fərdi Psixoterapiya",
+          "text": "Şəxsi inkişaf və emosional rifahınız üçün fərdi yanaşma."
+        },
+        {
+          "title": "Ailə Məsləhətliyi",
+          "text": "Ailə münasibətlərini möhkəmləndirmək üçün kompleks xidmətlər."
+        }
+      ],
+      "more_link": "Ətraflı öyrən"
+    },
+    "services_section": {
+      "title": "Xidmətlərimiz",
+      "description": "Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər",
+      "items": [
+        {
+          "id": 1,
+          "title": "Fərdi Psixologiya",
+          "text": "Şəxsi problemləriniz üçün"
+        },
+        {
+          "id": 2,
+          "title": "Ailə Terapiyası",
+          "text": "Ailə münasibətlərini gücləndirin"
+        },
+        {
+          "id": 3,
+          "title": "Uşaq Psixologiyası",
+          "text": "Uşaqlarınızın inkişafı üçün"
+        },
+        { "id": 4, "title": "Loqopediya", "text": "Nitq problemlərinin həlli" },
+        {
+          "id": 5,
+          "title": "Duyğu Bütünləşməsi",
+          "text": "Duyğu sisteminin inkişafı"
+        },
+        {
+          "id": 6,
+          "title": "Refleksologiya",
+          "text": "Fiziki və emosional balans"
+        }
+      ],
+      "view_all": "Hamısına bax"
+    },
+    "specialists_section": {
+      "title": "Mütəxəssislər",
+      "items": [
+        {
+          "name": "Dr. Leyla Əliyeva",
+          "role": "Klinik Psixoloq",
+          "experience": "12 il təcrübə",
+          "badge": "Sertifikatlı",
+          "button_text": "Profilə bax"
+        }
+      ]
+    },
+    "tests_section": {
+      "title": "Psixoloji Testlər",
+      "items": [
+        { "title": "Stress Testi", "tag": "PULSUZ" },
+        { "title": "Depressiya Testi", "tag": "PULSUZ" },
+        { "title": "Təşviş Testi", "tag": "PULSUZ" }
+      ]
+    },
+    "blog_section": {
+      "title": "Bloq və Məqalələr",
+      "items": [
+        { "title": "Uşaqlarla Effektiv Ünsiyyət", "link_text": "Məqaləni oxu" },
+        {
+          "title": "Streslə Necə Mübarizə Aparmaq Olar?",
+          "link_text": "Məqaləni oxu"
+        },
+        { "title": "Özünə İnam və Özünü Qəbul", "link_text": "Məqaləni oxu" }
+      ]
+    }
+  },
+  "about_page": {
+    "mission_section": {
+      "title": "Peşəkar Psixoloji Mərkəz",
+      "description": "İkinci Nəfəs Psixologiya Mərkəzi olaraq missiyamız hər kəsə keyfiyyətli və əlçatan psixoloji xidmətlər təqdim etməkdir. Biz insanların psixoloji sağlamlığını qorumaq üçün çalışırıq."
+    },
+    "values_section": {
+      "title": "Dəyərlərimiz",
+      "description": "Hər gün işimizdə rəhbər tutduğumuz əsas prinsiplər",
+      "items": [
+        {
+          "title": "Məxfilik",
+          "text": "Hər bir müştərimizin şəxsi məlumatları və sessiyaları tam təhlükəsiz saxlanılır."
+        },
+        {
+          "title": "Empatiya",
+          "text": "Hər kəsin unikal ehtiyaclarını anlayır və dəstək göstəririk."
+        },
+        {
+          "title": "Elmi yanaşma",
+          "text": "Hər müştərimizin real və davamlı dəyişikliklər əldə etməsinə çalışırıq."
+        },
+        {
+          "title": "Peşəkarlıq",
+          "text": "Yalnız lisenziyalı və təcrübəli psixoloqlarla çalışırıq."
+        }
+      ]
+    },
+    "team_section": {
+      "title": "Komandamız",
+      "description": "Təcrübəli və empatik psixoloqlarımız sizin yanınızdadır",
+      "leaders": [
+        {
+          "role": "Təsisçi",
+          "name": "Dr. Aynur Həsənova",
+          "bio": "20 illik təcrübə ilə Azərbaycanda psixologiya sahəsində aparıcı mütəxəssislərdən biri..."
+        },
+        {
+          "role": "Baş Psixoloq",
+          "name": "Dr. Aynur Həsənova",
+          "bio": "20 illik təcrübə ilə Azərbaycanda psixologiya sahəsində aparıcı mütəxəssislərdən biri..."
+        }
+      ],
+      "members": [
+        { "name": "Dr. Nigar Məmmədova", "role": "Psixoloq" },
+        { "name": "Dr. Nigar Məmmədova", "role": "Psixoloq" },
+        { "name": "Dr. Nigar Məmmədova", "role": "Psixoloq" },
+        { "name": "Dr. Nigar Məmmədova", "role": "Psixoloq" }
+      ]
+    },
+    "events_section": {
+      "title": "Gələcək Tədbirlər",
+      "description": "Mental sağlamlıq və psixoloji rifahın təmin edilməsi üçün mütəmadili seminar və təlimlərimiz keçirilir.",
+      "items": [
+        {
+          "title": "Uşaqlarda emosional inkişaf",
+          "type": "Webinar",
+          "date": "15/05/2026",
+          "button": "Qeydiyyat"
+        },
+        {
+          "title": "Sağlam münasibətlər",
+          "type": "Seminar",
+          "date": "22/05/2026",
+          "button": "Qeydiyyat"
+        },
+        {
+          "title": "Motivasiya və özünüinkişaf",
+          "type": "Təlim",
+          "date": "29/05/2026",
+          "button": "Qeydiyyat"
+        }
+      ]
+    },
+    "stats_section": {
+      "items": [
+        { "value": "12", "label": "İl təcrübə" },
+        { "value": "1500+", "label": "Uğurlu müalicə" },
+        { "value": "8", "label": "Peşəkar psixoloq" },
+        { "value": "95%", "label": "Müştəri məmnuniyyəti" }
+      ]
+    }
+  },
+  "blog_page": {
+    "title": "Bloq və Məqalələr",
+    "description": "Psixoloji sağlamlıq haqqında faydalı məlumatlar",
+    "view_all": "Hamısına bax",
+    "items": [
+      {
+        "date": "15 Aprel 2026",
+        "title": "Streslə Necə Mübarizə Aparmaq Olar?",
+        "description": "Gündəlik həyatda stresslə başa çıxmaq üçün effektiv metodlar və praktiki məsləhətlər",
+        "link_text": "Məqaləni oxu"
+      },
+      {
+        "date": "15 Aprel 2026",
+        "title": "Streslə Necə Mübarizə Aparmaq Olar?",
+        "description": "Gündəlik həyatda stresslə başa çıxmaq üçün effektiv metodlar və praktiki məsləhətlər",
+        "link_text": "Məqaləni oxu"
+      },
+      {
+        "date": "15 Aprel 2026",
+        "title": "Streslə Necə Mübarizə Aparmaq Olar?",
+        "description": "Gündəlik həyatda stresslə başa çıxmaq üçün effektiv metodlar və praktiki məsləhətlər",
+        "link_text": "Məqaləni oxu"
+      }
+    ]
+  },
+  "contact_page": {
+    "title": "Əlaqə",
+    "description": "Suallarınız və ya təklifləriniz varsa, bizimlə əlaqə saxlayın və biz sizə ən qısa müddətdə cavab verəcəyik.",
+    "form": {
+      "full_name_label": "Ad Soyad *",
+      "full_name_placeholder": "Ad və soyadınızı daxil edin",
+      "phone_label": "Telefon Nömrəsi *",
+      "phone_placeholder": "+994 50 555 55 55",
+      "email_label": "Email Ünvanı *",
+      "email_placeholder": "example@gmail.com",
+      "request_type_label": "Sorğu Növü *",
+      "request_type_placeholder": "Seçin",
+      "request_type_options": [
+        "Psixoloji dəstək",
+        "Rezervasiya",
+        "Məlumat almaq"
+      ],
+      "message_label": "Mesaj *",
+      "message_placeholder": "Mesajınızı yazın...",
+      "checkbox_text": "Məxfilik siyasətini qəbul edirəm və məlumatlarımın işlənməsinə razıyam",
+      "submit_button": "Mesaj Göndər"
+    },
+    "info": {
+      "phone_title": "Bizə Zəng Edin",
+      "phone_description": "Hər gün 09:00-dan 18:00-dək",
+      "phone_value": "+994 12 345 67 89",
+      "email_title": "Email Göndərin",
+      "email_description": "İstənilən vaxt email göndərin",
+      "email_value": "info@ikincinefes.az",
+      "address_title": "Ofisimiz",
+      "address_description": "Ofisimizə gəlin",
+      "address_value": "A. Nəbiyev küç. 15, Nəsimi Bakı, Azərbaycan"
+    }
+  },
+  "services_page": {
+    "title": "Xidmətlərimiz",
+    "description": "Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər",
+    "view_all": "Hamısına bax",
+    "items": [
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      },
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      },
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      },
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      },
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      },
+      {
+        "title": "Ailə Terapiyası",
+        "subtitle": "Şəxsi problemləriniz üçün",
+        "button_text": "Ətraflı öyrən"
+      }
+    ],
+    "cta": {
+      "title_prefix": "İlk Addımı",
+      "title_highlight": "Atın",
+      "description": "Psixoloqlarımızla görüşün və özünüzə uyğun terapiya planı qurub dəyişikliyə başlayın",
+      "button": "Seansa yazıl",
+      "phone": "+994 12 345 67 89",
+      "question": "Sualınız var?",
+      "email": "info@psixologiya.az"
+    }
+  },
+  "specialists_page": {
+    "title": "Mütəxəssislər",
+    "description": "Sizin ehtiyaclarınıza uyğun psixoloji xidmətlər",
+    "filters": [
+      "Psixoloq",
+      "Psixopedaqoq",
+      "Loqoped",
+      "Duyu Bütövləmə",
+      "Refleksoloq"
+    ],
+    "view_all": "Hamısına bax",
+    "cards": [
+      {
+        "badge": "Sertifikatlı",
+        "name": "Dr. Leyla Əliyeva",
+        "role": "Klinik Psixoloq",
+        "experience": "12 il təcrübə",
+        "button_text": "Profilə bax"
+      },
+      {
+        "badge": "Sertifikatlı",
+        "name": "Dr. Leyla Əliyeva",
+        "role": "Klinik Psixoloq",
+        "experience": "12 il təcrübə",
+        "button_text": "Profilə bax"
+      },
+      {
+        "badge": "Sertifikatlı",
+        "name": "Dr. Leyla Əliyeva",
+        "role": "Klinik Psixoloq",
+        "experience": "12 il təcrübə",
+        "button_text": "Profilə bax"
+      },
+      {
+        "badge": "Sertifikatlı",
+        "name": "Dr. Leyla Əliyeva",
+        "role": "Klinik Psixoloq",
+        "experience": "12 il təcrübə",
+        "button_text": "Profilə bax"
+      }
+    ],
+    "cta": {
+      "title": "Hazırsınız? İlk addımı atmaq üçün seansa yazılın",
+      "button": "Seansa yazıl"
+    }
+  },
+  "tests_page": {
+    "title": "Psixoloji Testlər",
+    "description": "Özünüzü daha yaxşı tanıyın və inkişaf yollarını müəyyənləşdirin",
+    "view_all": "Hamısına bax",
+    "items": [
+      {
+        "tag": "PULSUZ",
+        "title": "Stress Səviyyəsi Testi",
+        "description": "Stress səviyyənizi ölçün və tövsiyələr alın",
+        "duration": "5 dəqiqə",
+        "questions": "15 sual",
+        "button_text": "Testə başla"
+      },
+      {
+        "tag": "PULSUZ",
+        "title": "Stress Səviyyəsi Testi",
+        "description": "Stress səviyyənizi ölçün və tövsiyələr alın",
+        "duration": "5 dəqiqə",
+        "questions": "15 sual",
+        "button_text": "Testə başla"
+      },
+      {
+        "tag": "PULSUZ",
+        "title": "Stress Səviyyəsi Testi",
+        "description": "Stress səviyyənizi ölçün və tövsiyələr alın",
+        "duration": "5 dəqiqə",
+        "questions": "15 sual",
+        "button_text": "Testə başla"
+      }
+    ]
+  }
+}

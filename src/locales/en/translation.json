@@ -1,0 +1,407 @@
+{
+  "common": {
+    "navbar": {
+      "menu": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "specialists": "Specialists",
+        "tests": "Tests",
+        "blog": "Blog",
+        "contact": "Contact"
+      },
+      "cta_button": "Book a Session"
+    },
+    "footer": {
+      "brand_name": "Psychology Center",
+      "company_desc": "Professional psychological services and support. Your emotional health is our priority.",
+      "links_header": "Quick Links",
+      "links": [
+        "Home",
+        "About Us",
+        "Services",
+        "Psychologists",
+        "Tests",
+        "Blog"
+      ],
+      "services_header": "Services",
+      "services": [
+        "Individual therapy",
+        "Couples counseling",
+        "Family therapy",
+        "Child psychology"
+      ],
+      "contact_header": "Contact",
+      "contacts": {
+        "phone": "+994 50 123 45 67",
+        "email": "info@psixologiya.az",
+        "address": "Baku, Azerbaijan"
+      },
+      "copyright": "© 2026 Psychology Center. All rights reserved.",
+      "bottom_links": ["Vacancies", "Privacy Policy"]
+    }
+  },
+  "home": {
+    "hero": {
+      "title_green": "Find Your",
+      "title_yellow": "Second Breath",
+      "description": "Professional psychological counseling for children and adults. Transform your life with safe, confidential, and effective therapy services.",
+      "buttons": {
+        "appointment": "Book a Session",
+        "start_test": "Take a Test"
+      }
+    },
+    "about_preview": {
+      "header": "About Us",
+      "sub_header": "The best choice for your mental health",
+      "main_title": "Real people delivering real results",
+      "description": "Our psychology center aims to provide the highest quality psychological services in Azerbaijan.",
+      "features": [
+        {
+          "title": "Individual Psychotherapy",
+          "text": "A personalized approach for your personal growth and emotional well-being."
+        },
+        {
+          "title": "Family Counseling",
+          "text": "Comprehensive services to strengthen family relationships."
+        }
+      ],
+      "more_link": "Learn More"
+    },
+    "services_section": {
+      "title": "Our Services",
+      "description": "Psychological services tailored to your needs",
+      "items": [
+        {
+          "id": 1,
+          "title": "Individual Psychology",
+          "text": "For your personal challenges"
+        },
+        {
+          "id": 2,
+          "title": "Family Therapy",
+          "text": "Strengthen family bonds"
+        },
+        {
+          "id": 3,
+          "title": "Child Psychology",
+          "text": "For your children's development"
+        },
+        {
+          "id": 4,
+          "title": "Speech Therapy",
+          "text": "Solutions for speech disorders"
+        },
+        {
+          "id": 5,
+          "title": "Sensory Integration",
+          "text": "Development of the sensory system"
+        },
+        {
+          "id": 6,
+          "title": "Reflexology",
+          "text": "Physical and emotional balance"
+        }
+      ],
+      "view_all": "View All"
+    },
+    "specialists_section": {
+      "title": "Specialists",
+      "items": [
+        {
+          "name": "Dr. Leyla Aliyeva",
+          "role": "Clinical Psychologist",
+          "experience": "12 years of experience",
+          "badge": "Certified",
+          "button_text": "View Profile"
+        }
+      ]
+    },
+    "tests_section": {
+      "title": "Psychological Tests",
+      "items": [
+        { "title": "Stress Test", "tag": "FREE" },
+        { "title": "Depresson Test", "tag": "FREE" },
+        { "title": "Anxiety Test", "tag": "FREE" }
+      ]
+    },
+    "blog_section": {
+      "title": "Blog & Articles",
+      "items": [
+        {
+          "title": "Effective Communication with Children",
+          "link_text": "Read Article"
+        },
+        { "title": "How to Deal with Stress?", "link_text": "Read Article" },
+        {
+          "title": "Self-Confidence and Self-Acceptance",
+          "link_text": "Read Article"
+        }
+      ]
+    }
+  },
+  "about_page": {
+    "mission_section": {
+      "title": "Professional Psychology Center",
+      "description": "As Second Breath Psychology Center, our mission is to provide quality and accessible psychological services to everyone. We work to protect people's mental health."
+    },
+    "values_section": {
+      "title": "Our Values",
+      "description": "Core principles that guide our work every day",
+      "items": [
+        {
+          "title": "Confidentiality",
+          "text": "The personal information and sessions of each of our clients are kept completely safe."
+        },
+        {
+          "title": "Empathy",
+          "text": "We understand the unique needs of everyone and offer our support."
+        },
+        {
+          "title": "Scientific Approach",
+          "text": "We strive for each client to achieve real and sustainable changes."
+        },
+        {
+          "title": "Professionalism",
+          "text": "We work exclusively with licensed and experienced psychologists."
+        }
+      ]
+    },
+    "team_section": {
+      "title": "Our Team",
+      "description": "Our experienced and empathetic psychologists are here for you",
+      "leaders": [
+        {
+          "role": "Founder",
+          "name": "Dr. Aynur Hasanova",
+          "bio": "One of the leading experts in the field of psychology in Azerbaijan with 20 years of experience..."
+        },
+        {
+          "role": "Head Psychologist",
+          "name": "Dr. Aynur Hasanova",
+          "bio": "One of the leading experts in the field of psychology in Azerbaijan with 20 years of experience..."
+        }
+      ],
+      "members": [
+        { "name": "Dr. Nigar Mammadova", "role": "Psychologist" },
+        { "name": "Dr. Nigar Mammadova", "role": "Psychologist" },
+        { "name": "Dr. Nigar Mammadova", "role": "Psychologist" },
+        { "name": "Dr. Nigar Mammadova", "role": "Psychologist" }
+      ]
+    },
+    "events_section": {
+      "title": "Upcoming Events",
+      "description": "We regularly organize seminars and training sessions to promote mental health and psychological well-being.",
+      "items": [
+        {
+          "title": "Emotional development in children",
+          "type": "Webinar",
+          "date": "15/05/2026",
+          "button": "Register"
+        },
+        {
+          "title": "Healthy relationships",
+          "type": "Seminar",
+          "date": "22/05/2026",
+          "button": "Register"
+        },
+        {
+          "title": "Motivation and self-development",
+          "type": "Training",
+          "date": "29/05/2026",
+          "button": "Register"
+        }
+      ]
+    },
+    "stats_section": {
+      "items": [
+        { "value": "12", "label": "Years of experience" },
+        { "value": "1500+", "label": "Successful treatments" },
+        { "value": "8", "label": "Professional psychologists" },
+        { "value": "95%", "label": "Client satisfaction" }
+      ]
+    }
+  },
+  "blog_page": {
+    "title": "Blog & Articles",
+    "description": "Useful information about mental health",
+    "view_all": "View All",
+    "items": [
+      {
+        "date": "15 April 2026",
+        "title": "How to Deal with Stress?",
+        "description": "Effective methods and practical tips for coping with stress in daily life",
+        "link_text": "Read Article"
+      },
+      {
+        "date": "15 April 2026",
+        "title": "How to Deal with Stress?",
+        "description": "Effective methods and practical tips for coping with stress in daily life",
+        "link_text": "Read Article"
+      },
+      {
+        "date": "15 April 2026",
+        "title": "How to Deal with Stress?",
+        "description": "Effective methods and practical tips for coping with stress in daily life",
+        "link_text": "Read Article"
+      }
+    ]
+  },
+  "contact_page": {
+    "title": "Contact",
+    "description": "If you have any questions or suggestions, contact us and we will respond as soon as possible.",
+    "form": {
+      "full_name_label": "Full Name *",
+      "full_name_placeholder": "Enter your full name",
+      "phone_label": "Phone Number *",
+      "phone_placeholder": "+994 50 555 55 55",
+      "email_label": "Email Address *",
+      "email_placeholder": "example@gmail.com",
+      "request_type_label": "Request Type *",
+      "request_type_placeholder": "Select",
+      "request_type_options": [
+        "Psychological support",
+        "Reservation",
+        "Get information"
+      ],
+      "message_label": "Message *",
+      "message_placeholder": "Write your message...",
+      "checkbox_text": "I accept the privacy policy and consent to the processing of my data",
+      "submit_button": "Send Message"
+    },
+    "info": {
+      "phone_title": "Call Us",
+      "phone_description": "Every day from 09:00 to 18:00",
+      "phone_value": "+994 12 345 67 89",
+      "email_title": "Send an Email",
+      "email_description": "Send an email anytime",
+      "email_value": "info@ikincinefes.az",
+      "address_title": "Our Office",
+      "address_description": "Visit our office",
+      "address_value": "15 A. Nabiyev St., Nasimi, Baku, Azerbaijan"
+    }
+  },
+  "services_page": {
+    "title": "Our Services",
+    "description": "Psychological services tailored to your needs",
+    "view_all": "View All",
+    "items": [
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      },
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      },
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      },
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      },
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      },
+      {
+        "title": "Family Therapy",
+        "subtitle": "For your personal challenges",
+        "button_text": "Learn More"
+      }
+    ],
+    "cta": {
+      "title_prefix": "Take the",
+      "title_highlight": "First Step",
+      "description": "Meet with our psychologists, create a therapy plan that suits you, and begin your change",
+      "button": "Book a Session",
+      "phone": "+994 12 345 67 89",
+      "question": "Have a question?",
+      "email": "info@psixologiya.az"
+    }
+  },
+  "specialists_page": {
+    "title": "Specialists",
+    "description": "Psychological services tailored to your needs",
+    "filters": [
+      "Psychologist",
+      "Psychopedagogue",
+      "Speech Therapist",
+      "Sensory Integration",
+      "Reflexologist"
+    ],
+    "view_all": "View All",
+    "cards": [
+      {
+        "badge": "Certified",
+        "name": "Dr. Leyla Aliyeva",
+        "role": "Clinical Psychologist",
+        "experience": "12 years of experience",
+        "button_text": "View Profile"
+      },
+      {
+        "badge": "Certified",
+        "name": "Dr. Leyla Aliyeva",
+        "role": "Clinical Psychologist",
+        "experience": "12 years of experience",
+        "button_text": "View Profile"
+      },
+      {
+        "badge": "Certified",
+        "name": "Dr. Leyla Aliyeva",
+        "role": "Clinical Psychologist",
+        "experience": "12 years of experience",
+        "button_text": "View Profile"
+      },
+      {
+        "badge": "Certified",
+        "name": "Dr. Leyla Aliyeva",
+        "role": "Clinical Psychologist",
+        "experience": "12 years of experience",
+        "button_text": "View Profile"
+      }
+    ],
+    "cta": {
+      "title": "Ready? Book a session to take the first step",
+      "button": "Book a Session"
+    }
+  },
+  "tests_page": {
+    "title": "Psychological Tests",
+    "description": "Know yourself better and identify ways to grow",
+    "view_all": "View All",
+    "items": [
+      {
+        "tag": "FREE",
+        "title": "Stress Level Test",
+        "description": "Measure your stress level and get recommendations",
+        "duration": "5 minutes",
+        "questions": "15 questions",
+        "button_text": "Start Test"
+      },
+      {
+        "tag": "FREE",
+        "title": "Stress Level Test",
+        "description": "Measure your stress level and get recommendations",
+        "duration": "5 minutes",
+        "questions": "15 questions",
+        "button_text": "Start Test"
+      },
+      {
+        "tag": "FREE",
+        "title": "Stress Level Test",
+        "description": "Measure your stress level and get recommendations",
+        "duration": "5 minutes",
+        "questions": "15 questions",
+        "button_text": "Start Test"
+      }
+    ]
+  }
+}
